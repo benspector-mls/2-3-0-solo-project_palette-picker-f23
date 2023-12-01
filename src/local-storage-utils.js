@@ -22,6 +22,9 @@ export const addPalette = (palette) => {
   palettes.push(palette);
   setPalettes(palettes);
 };
+export const deletePalette = (uuid) => {
+  setPalettes(getPalettes().filter((palette) => palette.uuid !== uuid));
+}
 
 // { "criticScore": 88, "audienceScore": 83, "domestic": 635763484, "genre": "comedy",    "title": "Barbie" },
 export const resetPalettes = () => setLocalStorageKey('palettes', startingPaletteData);

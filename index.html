@@ -8,18 +8,18 @@
   </head>
   <body>
     <div id="app">
-      <header></header>
       <main>
         <h1>Palette Picker</h1>
-        <h2>My Palettes</h2>
         <section id="my-palettes" aria-label="my-palettes">
+          <h2>My Palettes</h2>
           <ul id="palettes-list"></ul>
+          <button id="reset-to-defaults">Reset To Defaults</button>
         </section>
         <form id="new-palette-form" aria-label="new-palette-form">
           <h2>Create Your Palette</h2>
           <div>
             <label for="title">Palette Title</label>
-            <input type="text" name="title" id="title" required />
+            <input type="text" name="title" id="title" maxlength="16" required />
           </div>
           <div>
             <label for="color1">Color 1</label>
@@ -53,7 +53,6 @@
           <button>Create</button>
         </form>
       </main>
-      <footer></footer>
     </div>
     <script type="module" src="src/main.js"></script>
   </body>
