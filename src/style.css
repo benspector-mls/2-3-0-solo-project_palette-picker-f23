@@ -89,7 +89,7 @@ main {
   gap: .5rem;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 1px 2px 3px 4px var(--black);
+  box-shadow: 8px 8px 7px -4px var(--black);
   flex: 1;
   min-width: 232px;
   max-width: 30%;
